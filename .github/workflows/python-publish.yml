@@ -4,13 +4,9 @@
 name: Pypi
 
 on:
-  pull_request:
-    branches: 
-      - master
-  push:
-    branches: 
-      - master
-  
+  release:
+    types: [released]
+
 jobs:
   deploy:
 
