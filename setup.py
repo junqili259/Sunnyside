@@ -1,25 +1,22 @@
-from distutils.core import setup
-setup(
-  name = 'sunnyside',        
-  packages = ['sunnyside'],   
-  version = '0.1',     
-  license='MIT',        
-  description = 'Python wrapper for OpenWeather API',   # Give a short description about your library
-  author = 'Jun Qi Li',                   
-  author_email = 'JunQi.Li63@myhunter.cuny.edu',      
-  url = '',   
-  download_url = 'https://github.com/junqili259/Sunnyside/archive/v0.1.tar.gz',   
-  keywords = ['OpenWeather'],   # Keywords that define your package best
-  install_requires=[            
-          'requests'
-      ],
-  classifiers=[
-    'Development Status :: 3 - Alpha',      # Chose either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package
-    'Intended Audience :: Developers',      # Define that your audience are developers
-    'Topic :: Software Development :: Build Tools',
-    'License :: OSI Approved :: MIT License',   # Again, pick a license
-    'Programming Language :: Python :: 3.6',
-    'Programming Language :: Python :: 3.7',
-    'Programming Language :: Python :: 3.8'
-  ],
+import setuptools
+
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
+setuptools.setup(
+    name="sunnyside-junqili259", # Replace with your own username
+    version="0.0.1",
+    author="Jun Qi Li",
+    author_email="JunQi.Li63@myhunter.cuny.com",
+    description="Python wrapper for OpenWeather API",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="",
+    packages=setuptools.find_packages(),
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    python_requires='>=3.6',
 )
