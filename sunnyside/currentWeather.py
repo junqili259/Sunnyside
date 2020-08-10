@@ -10,7 +10,7 @@ class CurrentWeather:
         """
         Returns with a list of weather parameters by city name
         """
-        if self.units == None:
+        if self.units is None:
             api_url = f"https://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={self.api_key}"
         else:
             api_url = f"https://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={self.api_key}" + f"&units={self.units}"
@@ -24,7 +24,7 @@ class CurrentWeather:
         Args:
             city_id: Int
         """
-        if self.units == None:
+        if self.units is None:
             api_url = f"https://api.openweathermap.org/data/2.5/weather?id={city_id}&appid={self.api_key}"
         else:
             api_url = f"https://api.openweathermap.org/data/2.5/weather?id={city_id}&appid={self.api_key}" + f"&units={self.units}"
@@ -39,7 +39,7 @@ class CurrentWeather:
             lat: Int
             lon: Int
         """
-        if self.units == None:
+        if self.units is None:
             api_url = f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={self.api_key}"
         else:
             api_url = f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={self.api_key}" + f"&units={self.units}"
@@ -54,7 +54,7 @@ class CurrentWeather:
             zip_code: Int
             country_code: Optional
         """ 
-        if self.units == None:
+        if self.units is None:
             api_url = f"https://api.openweathermap.org/data/2.5/weather?zip={zip_code},{country_code}&appid={self.api_key}"
         else:
             api_url = f"https://api.openweathermap.org/data/2.5/weather?zip={zip_code},{country_code}&appid={self.api_key}" + f"&units={self.units}"
