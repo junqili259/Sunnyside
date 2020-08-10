@@ -15,6 +15,7 @@ Sunnyside only supports python 3.6+
 _________________________________________________________________________________________________________________________________________________________________________________
 
 ## Current Weather
+https://openweathermap.org/current
 
 ### Weather by city name
 **Note**: Units are by default in Kelvin, to change units to imperial or celsius.
@@ -42,9 +43,9 @@ ref.get_current_weather_by_geo_coords("lat","lon")
 ref.get_current_weather_by_zip_code("zipcode")
 ```
 
-
 _________________________________________________________________________________________________________________________________________________________________________________
 ## 5 Day Weather Forecast
+https://openweathermap.org/forecast5
 
 ### Weather by city name
 **Note**: Units are by default in Kelvin, to change units to imperial or celsius.
@@ -76,3 +77,7 @@ ________________________________________________________________________________
 
 ## Reference
 https://openweathermap.org/api
+
+https://openweathermap.org/current
+
+https://openweathermap.org/forecast5
