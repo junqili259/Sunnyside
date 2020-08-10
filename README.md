@@ -17,7 +17,7 @@ ________________________________________________________________________________
 ## Current Weather
 #### Weather by city name
 **Note**: Units are by default in Kelvin, to change units to imperial or celsius.
-This works for all Current Weather methods
+This works for all Current Weather methods.
 ```python
 response = ref.get_current_weather_by_city_name("some_city_name_here","imperial")
 ```
