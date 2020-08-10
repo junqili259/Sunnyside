@@ -34,7 +34,7 @@ ref.get_current_weather_by_city_id("city_id")
 ```
 #### Weather by coordinates 
 ```python
-ref.get_current_weather_by_geographic_coord("lat","lon")
+ref.get_current_weather_by_geo_coords("lat","lon")
 ```
 #### Weather by zip code
 ```python
