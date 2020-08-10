@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="sunnyside",
-    version="1.0.0",
+    version="1.0.1",
     author="Jun Qi Li",
     author_email="JunQi.Li63@myhunter.cuny.com",
     description="Python wrapper for OpenWeather API",
