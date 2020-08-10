@@ -11,7 +11,7 @@ setuptools.setup(
     description="Python wrapper for OpenWeather API",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="",
+    url="https://github.com/junqili259/Sunnyside/",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3.6",
