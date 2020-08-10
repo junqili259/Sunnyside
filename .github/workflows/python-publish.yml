@@ -4,8 +4,11 @@
 name: Pypi
 
 on:
-  release:
-    types: [released, edited]
+  push:
+    branches: 
+      - master
+  #release:
+    #types: [released, edited]
 
 jobs:
   deploy:
