@@ -15,7 +15,8 @@ Sunnyside only supports python 3.6+
 _________________________________________________________________________________________________________________________________________________________________________________
 
 ## Current Weather
-#### Weather by city name
+
+### Weather by city name
 **Note**: Units are by default in Kelvin, to change units to imperial or celsius.
 This works for all Current Weather methods.
 ```python
@@ -28,17 +29,47 @@ import sunnyside
 ref = sunnyside.CurrentWeather("YOUR-API-KEY-HERE") # Enter your api key here
 response = ref.get_current_weather_by_city_name("city_name") # Enter your city name here
 ```
-#### Weather by city id
+### Weather by city id
 ```python
 ref.get_current_weather_by_city_id("city_id")
 ```
-#### Weather by coordinates 
+### Weather by coordinates 
 ```python
 ref.get_current_weather_by_geo_coords("lat","lon")
 ```
-#### Weather by zip code
+### Weather by zip code
 ```python
 ref.get_current_weather_by_zip_code("zipcode")
+```
+
+
+_________________________________________________________________________________________________________________________________________________________________________________
+## 5 Day Weather Forecast
+
+### Weather by city name
+**Note**: Units are by default in Kelvin, to change units to imperial or celsius.
+This works for all Current Weather methods.
+```python
+response = ref.get_forecast_by_city_name("some_city_name_here","imperial")
+```
+
+```python
+import sunnyside
+
+ref = sunnyside.CurrentWeather("YOUR-API-KEY-HERE") # Enter your api key here
+response = ref.get_forecast_by_city_name("city_name") # Enter your city name here
+```
+### Weather by city id
+```python
+ref.get_forecast_by_city_id("city_id")
+```
+### Weather by coordinates 
+```python
+ref.get_forecast_by_geo_coords("lat","lon")
+```
+### Weather by zip code
+```python
+ref.get_forecast_by_zip_code("zipcode")
 ```
 
 _________________________________________________________________________________________________________________________________________________________________________________
