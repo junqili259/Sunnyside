@@ -16,11 +16,17 @@ ________________________________________________________________________________
 
 ## Current Weather
 #### Weather by city name
+**Note**: Units are by default in Kelvin, to change units to imperial or celsius.
+This works for all Current Weather methods
+```python
+response = ref.get_current_weather_by_city_name("some_city_name_here","imperial")
+```
+
 ```python
 import sunnyside
 
-ref = sunnyside.CurrentWeather("YOUR-API-KEY-HERE")
-response = ref.get_current_weather_by_city_name("Brooklyn")
+ref = sunnyside.CurrentWeather("YOUR-API-KEY-HERE") # Enter your api key here
+response = ref.get_current_weather_by_city_name("city_name") # Enter your city name here
 ```
 #### Weather by city id
 ```python
