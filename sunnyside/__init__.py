@@ -1,2 +1,1 @@
-from sunnyside.currentWeather import CurrentWeather
-from sunnyside.fiveDayForecast import FiveDayForecast
+from sunnyside.sunnyside import Sunnyside
