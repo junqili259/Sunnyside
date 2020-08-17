@@ -53,9 +53,6 @@ forecast = ref.fiveDayForecast()
 response = forecast.get_forecast_by_city_name("some_city_name_here")
 ```
 
-```python
-
-```
 ### Weather by city id
 ```python
 response = forecast.get_forecast_by_city_id("city_id")
