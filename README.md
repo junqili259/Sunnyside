@@ -67,6 +67,19 @@ response = forecast.get_forecast_by_zip_code("zipcode")
 ```
 
 _________________________________________________________________________________________________________________________________________________________________________________
+## One Call
+https://openweathermap.org/api/one-call-api
+
+
+### Get weather data from one call api
+```python
+openweather = ref.one_call()
+response = openweather.get_weather("33.441792","-94.037689")
+```
+
+
+
+_________________________________________________________________________________________________________________________________________________________________________________
 
 ## Reference
 https://openweathermap.org/api
@@ -74,3 +87,5 @@ https://openweathermap.org/api
 https://openweathermap.org/current
 
 https://openweathermap.org/forecast5
+
+https://openweathermap.org/api/one-call-api
