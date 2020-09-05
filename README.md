@@ -26,7 +26,7 @@ https://openweathermap.org/current
 **Note**: Units are by default in Kelvin, to change units to imperial or celsius.
 
 ```python
-weather = ref.currentWeather()
+weather = ref.current_weather()
 response = weather.get_current_weather_by_city_name("city_name") # Enter your city name here
 ```
 ### Weather by city id
@@ -49,7 +49,7 @@ https://openweathermap.org/forecast5
 ### Weather by city name
 
 ```python
-forecast = ref.fiveDayForecast()
+forecast = ref.five_day_forecast()
 response = forecast.get_forecast_by_city_name("some_city_name_here")
 ```
 

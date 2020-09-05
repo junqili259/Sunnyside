@@ -14,7 +14,7 @@ class FiveDayForecast:
         else:
             api_url = f"https://api.openweathermap.org/data/2.5/forecast?q={city_name}&appid={self.api_key}" + f"&units={self.units}"
 
-        response = requests.get(url=api_url)
+        response = requests.get(url= api_url)
         return response.json()
 
     def get_forecast_by_city_id(self, city_id):
@@ -28,7 +28,7 @@ class FiveDayForecast:
         else:
             api_url = f"https://api.openweathermap.org/data/2.5/forecast?id={city_id}&appid={self.api_key}" + f"&units={self.units}"
 
-        response = requests.get(url=api_url)
+        response = requests.get(url= api_url)
         return response.json()
 
     def get_forecast_by_geo_coords(self, lat, lon):
@@ -43,7 +43,7 @@ class FiveDayForecast:
         else:
             api_url = f"https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={self.api_key}" + f"&units={self.units}"
 
-        response = requests.get(url=api_url)
+        response = requests.get(url= api_url)
         return response.json()
     
     def get_forecast_by_zip_code(self, zip_code, country_code="us"):
@@ -58,5 +58,5 @@ class FiveDayForecast:
         else:
             api_url = f"api.openweathermap.org/data/2.5/forecast?zip={zip_code},{country_code}&appid={self.api_key}" + f"&units={self.units}"
             
-        response = requests.get(url=api_url)
+        response = requests.get(url= api_url)
         return response.json()
