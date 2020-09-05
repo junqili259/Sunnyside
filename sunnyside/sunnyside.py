@@ -1,5 +1,6 @@
 from .currentWeather import CurrentWeather
 from .fiveDayForecast import FiveDayForecast
+from .onecall import OneCall
 
 
 class Sunnyside:
@@ -7,8 +8,11 @@ class Sunnyside:
         self.api_key = api_key
         self.units = units
     
-    def currentWeather(self):
+    def current_weather(self):
         return CurrentWeather(self.api_key, self.units)
 
-    def fiveDayForecast(self):
+    def five_day_forecast(self):
         return FiveDayForecast(self.api_key, self.units)
+    
+    def one_call(self):
+        return OneCall(self.api_key, self.units)
